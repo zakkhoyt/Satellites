@@ -1,0 +1,43 @@
+// Read the API here:
+uhaapi.com/api-documentation-v2-0/
+
+// Example curl call here:
+curl -H "Accept: application/json" -H"from:vaporwarewolf@gmail.com" -X GET http://api.uhaapi.com/satellites/3
+
+// which gives the response:
+{"id":3,"idc":"1957-002-A","name":"Sputnik 2","launched":-383779800}
+
+// parsed looks like this:
+id : 3
+idc : 1957-002-A
+name : Sputnik 2
+launched : -383779800
+    
+    
+    
+// Get passes of a satellite
+curl -H "Accept: application/json" -H"from:vaporwarewolf@gmail.com" -X GET http://api.uhaapi.com/satellites/32323/passes
+
+// response
+{"id":32323,"location":{"lat":0.0,"lng":0.0},"altitude":-4941.75,"from":1357172319,"to":1357604319,"results":[{"start":{"time":1357183867,"alt":10.0,"az":180.0},"max":{"time":1357184022,"alt":24.0,"az":202.5},"end":{"time":1357184022,"alt":24.0,"az":202.5}},{"start":{"time":1357265802,"alt":10.0,"az":135.0},"max":{"time":1357265833,"alt":12.0,"az":135.0},"end":{"time":1357265833,"alt":12.0,"az":135.0}},{"start":{"time":1357272016,"alt":10.0,"az":202.5},"max":{"time":1357272126,"alt":17.0,"az":225.0},"end":{"time":1357272126,"alt":17.0,"az":225.0}},{"start":{"time":1357353834,"alt":10.0,"az":157.5},"max":{"time":1357353936,"alt":19.0,"az":157.5},"end":{"time":1357353936,"alt":19.0,"az":157.5}},{"start":{"time":1357441911,"alt":10.0,"az":180.0},"max":{"time":1357442039,"alt":22.0,"az":180.0},"end":{"time":1357442039,"alt":22.0,"az":180.0}},{"start":{"time":1357530028,"alt":10.0,"az":202.5},"max":{"time":1357530142,"alt":19.0,"az":202.5},"end":{"time":1357530142,"alt":19.0,"az":202.5}}]}    
+
+
+
+// Passes with a specified location:
+curl -H "Accept: application/json" -H"from:vaporwarewolf@gmail.com" -X GET http://api.uhaapi.com/satellites/27386/passes?lat=34.201694&lng=-118.171667 
+
+// response
+{"id":27386,"location":{"lat":34.2,"lng":0.0},"altitude":996.719970703125,"from":1357172496,"to":1357604496,"results":[]}
+
+
+
+// A list of brightest satellites:
+http://www.n2yo.com/satellites/?c=1
+http://satellitedebris.net/Database/index.php?partitionpage=1
+
+
+// ISS number is 25544
+    
+// Corte Madera location is
+Latitude: 	37.97353°
+Longitude: 	-122.53109°

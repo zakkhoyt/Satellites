@@ -24,6 +24,7 @@
 		C6F1821D169504D900F6B61A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F181F5169504D900F6B61A /* Foundation.framework */; };
 		C6F18225169504D900F6B61A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C6F18223169504D900F6B61A /* InfoPlist.strings */; };
 		C6F18228169504D900F6B61A /* SatellitesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F18227169504D900F6B61A /* SatellitesTests.m */; };
+		C6F18233169504F000F6B61A /* about.txt in Resources */ = {isa = PBXBuildFile; fileRef = C6F18232169504F000F6B61A /* about.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		C6F18224169504D900F6B61A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C6F18226169504D900F6B61A /* SatellitesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SatellitesTests.h; sourceTree = "<group>"; };
 		C6F18227169504D900F6B61A /* SatellitesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SatellitesTests.m; sourceTree = "<group>"; };
+		C6F18232169504F000F6B61A /* about.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = about.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		C6F181F9169504D900F6B61A /* Satellites */ = {
 			isa = PBXGroup;
 			children = (
+				C6F18231169504E300F6B61A /* docs */,
 				C6F18202169504D900F6B61A /* VWWAppDelegate.h */,
 				C6F18203169504D900F6B61A /* VWWAppDelegate.m */,
 				C6F1820B169504D900F6B61A /* MainStoryboard_iPhone.storyboard */,
@@ -161,6 +164,14 @@
 				C6F18223169504D900F6B61A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C6F18231169504E300F6B61A /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				C6F18232169504F000F6B61A /* about.txt */,
+			);
+			name = docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +252,7 @@
 				C6F1820A169504D900F6B61A /* Default-568h@2x.png in Resources */,
 				C6F1820D169504D900F6B61A /* MainStoryboard_iPhone.storyboard in Resources */,
 				C6F18210169504D900F6B61A /* MainStoryboard_iPad.storyboard in Resources */,
+				C6F18233169504F000F6B61A /* about.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
