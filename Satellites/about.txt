@@ -41,3 +41,14 @@ http://satellitedebris.net/Database/index.php?partitionpage=1
 // Corte Madera location is
 Latitude: 	37.97353°
 Longitude: 	-122.53109°
+
+
+
+	
+
+For output, use an NSDateFormatter. To extract values for other purposes, use NSDateComponents. eg:
+
+NSDate *date = [NSDate dateWithTimeIntervalSince1970:1234567];
+NSDateComponents *weekdayComponents = [[NSCalendar currentCalendar] components:NSWeekdayCalendarUnit fromDate:date];
+int weekday = [weekdayComponents weekday];
+
